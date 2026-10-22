@@ -1,4 +1,4 @@
-# SRU Brand Kit · v1.0
+# SRU Brand Kit · v1.1
 
 **Sulaiman Al Rajhi University · ICTD · IT Operations Center (ITOC)**
 
@@ -17,7 +17,7 @@ so a single update here restyles every platform.
 | Path | Purpose |
 |---|---|
 | `css/sru-tech-bg.css` | **SRU Tech Background · Network v1.0** — approved option C «شبكة متصلة متحركة». `.sru-tech-bg` for the purple header band, `.sru-tech-bg-dark` for the footer. Stops moving for "reduce motion", removed when printing. |
-| `css/sru-shell.css` | White brand bar with 40 px logos (`.sru-brandbar`), footer layout (`.sru-footer`), support box (`.sru-support`), ITOC badge (`.sru-itoc`). |
+| `css/sru-shell.css` | **v1.1** — White brand bar with 40 px logos (`.sru-brandbar`), footer layout (`.sru-footer`), support box (`.sru-support`), ITOC badge (`.sru-itoc`, same height as the support box, logo 32 px). |
 | `logos/` | Official SRU, ICTD and ITOC logos (transparent PNG). |
 | `index.html` | Live demo + copy-paste snippets. |
 | `CHANGELOG.md`, `.nojekyll` | Change record; serve files as-is. |

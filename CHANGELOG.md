@@ -1,5 +1,10 @@
 # Changelog — SRU Brand Kit
 
+## v1.1 — 2026-10-22
+- `css/sru-shell.css` v1.1 — **ITOC badge matches the «For Support» box**: the footer row stretches both to the same height
+  and keeps them on one line; ITOC logo 32 px (was 40 px). Phones: the badge stays compact under the support box.
+  Same change as Coffee with IT v3.9. `sru-tech-bg.css` unchanged (v1.0).
+
 ## v1.0 — 2026-10-22
 - First release.
 - `css/sru-tech-bg.css` v1.0 — **SRU Tech Background · Network** (approved option C «شبكة متصلة متحركة», first used in Coffee with IT v3.4):
