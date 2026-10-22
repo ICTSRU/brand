@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حزمة الهوية المشتركة — SRU Brand Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--purple:#501e8c;--purple-dark:#3a1464;--purple-light:#f0ebf8;--blue:#0a6eaa;--bg:#f7f5fb;--ink:#241436;--muted:#6b5a80;--border:rgba(80,30,140,.12)}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:'Cairo',Tahoma,Arial,sans-serif;font-size:16px;line-height:1.7}
+.en{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.hero{color:#fff}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:6px;background:var(--blue)}
+.hero .in{max-width:1100px;margin:0 auto;padding:28px 16px 34px}
+.hero h1{margin:0;font-size:clamp(24px,4vw,34px);font-weight:800}
+.hero p{margin:4px 0 0;opacity:.92}
+main{max-width:1100px;margin:0 auto;padding:22px 16px 40px}
+.card{background:#fff;border:1px solid var(--border);border-radius:4px;padding:18px 20px;margin-bottom:16px}
+.card h2{margin:0 0 8px;font-size:19px;color:var(--purple-dark)}
+.card p{margin:0 0 10px}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th,td{text-align:right;padding:8px 10px;border-top:1px solid var(--border);vertical-align:top}
+th{background:var(--purple-light);color:var(--purple-dark);border-top:0}
+code{font-family:Consolas,Menlo,monospace;font-size:13px;background:var(--purple-light);padding:1px 6px;border-radius:3px;direction:ltr;unicode-bidi:isolate}
+.snip{position:relative;margin:10px 0 0}
+.snip pre{direction:ltr;text-align:left;background:#1f1530;color:#e9e0f7;border-radius:4px;padding:14px 16px;overflow-x:auto;font-size:12.5px;line-height:1.6;margin:0}
+.copy{position:absolute;top:8px;right:8px;background:var(--purple);color:#fff;border:0;border-radius:4px;padding:4px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.copy:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.demo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:700px){.demo{grid-template-columns:minmax(0,1fr)}}
+.sw{border-radius:4px;min-height:96px;color:#fff;padding:14px 16px;font-weight:700;display:flex;align-items:flex-end}
+.ver{display:inline-block;background:#fff;color:var(--purple-dark);border-radius:4px;padding:2px 10px;font-weight:800;font-size:14px;margin-top:10px}
+</style>
+<link rel="stylesheet" href="css/sru-shell.css">
+<link rel="stylesheet" href="css/sru-tech-bg.css">
+</head>
+<body>
+
+<div class="sru-brandbar"><div class="in">
+  <img src="logos/sru-logo.png" alt="جامعة سليمان الراجحي">
+  <img src="logos/ictd-logo.png" alt="الإدارة التنفيذية للاتصالات وتقنية المعلومات">
+</div></div>
+
+<section class="hero sru-tech-bg"><div class="in">
+  <h1>حزمة الهوية المشتركة <span class="en">SRU Brand Kit</span></h1>
+  <p>مصدر واحد للخلفية التقنية والشعارات والتذييل — تربطه كل منصات الإدارة، فيصل أي تحديث للجميع</p>
+  <span class="ver en">v1.0</span>
+</div></section>
+
+<main>
+  <section class="card">
+    <h2>الملفات</h2>
+    <table>
+      <thead><tr><th>الملف</th><th>الاستخدام</th><th>الإصدار</th></tr></thead>
+      <tbody>
+        <tr><td><code>css/sru-tech-bg.css</code></td><td>الخلفية التقنية «شبكة متصلة متحركة»: <code>sru-tech-bg</code> للشريط العلوي، <code>sru-tech-bg-dark</code> للتذييل</td><td class="en">1.0</td></tr>
+        <tr><td><code>css/sru-shell.css</code></td><td>الشريط الأبيض للشعارات (40px)، التذييل، صندوق الدعم، شعار ITOC</td><td class="en">1.0</td></tr>
+        <tr><td><code>logos/*.png</code></td><td>شعارات الجامعة والإدارة و ITOC (خلفية شفافة)</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>الخلفية التقنية</h2>
+    <p>تتحرك ببطء شديد، وتتوقف لمن فعّل «تقليل الحركة» في جهازه، ولا تظهر عند الطباعة.</p>
+    <div class="demo">
+      <div class="sw sru-tech-bg">الشريط العلوي — <code style="background:rgba(255,255,255,.18);color:#fff;margin-right:6px">sru-tech-bg</code></div>
+      <div class="sw sru-tech-bg-dark">التذييل — <code style="background:rgba(255,255,255,.18);color:#fff;margin-right:6px">sru-tech-bg-dark</code></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>1) الروابط — داخل &lt;head&gt; بعد أنماط الصفحة</h2>
+    <div class="snip"><button class="copy" type="button">نسخ</button><pre id="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&amp;display=swap" rel="stylesheet"&gt;
+&lt;link rel="stylesheet" href="https://ictsru.github.io/brand/css/sru-shell.css"&gt;
+&lt;link rel="stylesheet" href="https://ictsru.github.io/brand/css/sru-tech-bg.css"&gt;</pre></div>
+  </section>
+
+  <section class="card">
+    <h2>2) الهيكل — مشروع جديد</h2>
+    <div class="snip"><button class="copy" type="button">نسخ</button><pre>&lt;div class="sru-brandbar"&gt;&lt;div class="in"&gt;
+  &lt;img src="https://ictsru.github.io/brand/logos/sru-logo.png" alt="جامعة سليمان الراجحي"&gt;
+  &lt;img src="https://ictsru.github.io/brand/logos/ictd-logo.png" alt="الإدارة التنفيذية للاتصالات وتقنية المعلومات"&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+&lt;section class="hero sru-tech-bg"&gt; … عنوان الصفحة … &lt;/section&gt;
+
+&lt;footer class="sru-footer sru-tech-bg-dark"&gt;&lt;div class="in"&gt;
+  &lt;div class="sru-support"&gt;&lt;b&gt;For Support:&lt;/b&gt; Dial &lt;span class="star"&gt;*&lt;/span&gt; &lt;span class="or"&gt;or&lt;/span&gt; Send email to: &lt;a href="mailto:servicedesk@sr.edu.sa"&gt;servicedesk@sr.edu.sa&lt;/a&gt;&lt;/div&gt;
+  &lt;a class="sru-itoc" href="https://ictsru.github.io/ITOC/#forms" target="_blank" rel="noopener"&gt;&lt;img src="https://ictsru.github.io/brand/logos/itoc-logo.png" alt="ITOC — IT Operations Center"&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;/footer&gt;</pre></div>
+  </section>
+
+  <section class="card">
+    <h2>3) مشروع قائم — تعديل بسيط</h2>
+    <p>أبقِ الهيكل كما هو، وأضف الصنف <code>sru-tech-bg</code> إلى الشريط البنفسجي و <code>sru-tech-bg-dark</code> إلى التذييل، ثم رابط <code>sru-tech-bg.css</code>. إن تعذّر الوصول للحزمة تبقى الصفحة بلونها البنفسجي الأصلي.</p>
+    <div class="snip"><button class="copy" type="button">نسخ</button><pre>&lt;section class="hero sru-tech-bg"&gt; … &lt;/section&gt;
+&lt;footer class="sru-tech-bg-dark"&gt; … &lt;/footer&gt;</pre></div>
+    <p style="margin-top:10px;color:var(--muted);font-size:14px">رسائل البريد لا تدعم الأنماط الخارجية ولا الحركة — تبقى قوالب البريد بالبنفسجي السادة.</p>
+  </section>
+</main>
+
+<footer class="sru-footer sru-tech-bg-dark"><div class="in">
+  <div class="sru-support"><b>For Support:</b> Dial <span class="star" aria-label="star">*</span> <span class="or">or</span> Send email to: <a href="mailto:servicedesk@sr.edu.sa">servicedesk@sr.edu.sa</a></div>
+  <a class="sru-itoc" href="https://ictsru.github.io/ITOC/#forms" target="_blank" rel="noopener" title="ITOC — IT Operations Center"><img src="logos/itoc-logo.png" alt="ITOC — IT Operations Center"></a>
+</div></footer>
+
+<script>
+document.querySelectorAll('.copy').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var t = b.parentNode.querySelector('pre').textContent;
+    function done() { b.textContent = 'تم النسخ ✓'; setTimeout(function () { b.textContent = 'نسخ'; }, 1500); }
+    if (navigator.clipboard) navigator.clipboard.writeText(t).then(done, function () {}); else done();
+  });
+});
+</script>
+</body>
+</html>
