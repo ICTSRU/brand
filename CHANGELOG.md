@@ -1,9 +1,9 @@
 # Changelog — SRU Brand Kit
 
-## v1.1 — 2026-10-22
-- `css/sru-shell.css` v1.1 — **ITOC badge matches the «For Support» box**: the footer row stretches both to the same height
-  and keeps them on one line; ITOC logo 32 px (was 40 px). Phones: the badge stays compact under the support box.
-  Same change as Coffee with IT v3.9. `sru-tech-bg.css` unchanged (v1.0).
+## v1.1 — 2026-11-11
+- **Apps Script support (inline by default).** Added `appsscript/BrandStyles.html` — the brand bar + footer + tech background as one embeddable `<style>` — because Apps Script's sandbox does not load external `<link>` CSS from non-Google domains (this had made header titles invisible and footers broken). Apps Script projects now embed this instead of linking.
+- Added `appsscript/BrandStyles.gs` (optional single-source: server-side fetch + 6 h cache, with embedded fallback) and `appsscript/README.md`.
+- README rewritten: path A (static → link, single-source) vs path B (Apps Script → embed). CSS unchanged (banners bumped to v1.1).
 
 ## v1.0 — 2026-10-22
 - First release.

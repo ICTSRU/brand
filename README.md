@@ -17,13 +17,21 @@ so a single update here restyles every platform.
 | Path | Purpose |
 |---|---|
 | `css/sru-tech-bg.css` | **SRU Tech Background · Network v1.0** — approved option C «شبكة متصلة متحركة». `.sru-tech-bg` for the purple header band, `.sru-tech-bg-dark` for the footer. Stops moving for "reduce motion", removed when printing. |
-| `css/sru-shell.css` | **v1.1** — White brand bar with 40 px logos (`.sru-brandbar`), footer layout (`.sru-footer`), support box (`.sru-support`), ITOC badge (`.sru-itoc`, same height as the support box, logo 32 px). |
+| `css/sru-shell.css` | White brand bar with 40 px logos (`.sru-brandbar`), footer layout (`.sru-footer`), support box (`.sru-support`), ITOC badge (`.sru-itoc`). |
 | `logos/` | Official SRU, ICTD and ITOC logos (transparent PNG). |
+| `appsscript/BrandStyles.html` | **Inline styles for Google Apps Script** — embed this (Apps Script does not load external CSS). Mirrors the two CSS files. |
+| `appsscript/BrandStyles.gs` | Optional single-source helper for Apps Script (fetch + cache, with embedded fallback). |
+| `appsscript/README.md` | How to use the kit inside Apps Script. |
 | `index.html` | Live demo + copy-paste snippets. |
 | `CHANGELOG.md`, `.nojekyll` | Change record; serve files as-is. |
 
-## Use in any project (HTML page or Apps Script HtmlService)
+## Use it — pick the path that matches the project
 
+> ⚠️ **Google Apps Script does NOT load external `<link>` CSS** from non-Google domains
+> (sandboxed iframe). Apps Script projects must **embed** the styles — see path B.
+> Static HTML / GitHub Pages sites can **link** and stay single-source — path A.
+
+### A) Static HTML / GitHub Pages — link (single source)
 Put the links **after** the page's own `<style>` so the kit wins:
 
 ```html
@@ -32,6 +40,14 @@ Put the links **after** the page's own `<style>` so the kit wins:
 <link rel="stylesheet" href="https://ictsru.github.io/brand/css/sru-shell.css">
 <link rel="stylesheet" href="https://ictsru.github.io/brand/css/sru-tech-bg.css">
 ```
+
+### B) Google Apps Script (HtmlService) — embed (default)
+Add **`appsscript/BrandStyles.html`** to the project and include it in `<head>` **after** your own `<style>`:
+
+```html
+<?!= include('BrandStyles') ?>
+```
+Full steps and the optional single-source helper: see **`appsscript/README.md`**.
 
 ```html
 <div class="sru-brandbar"><div class="in">
